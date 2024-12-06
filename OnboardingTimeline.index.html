@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding Checklist for Europe North Managers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2a5db0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .header {
+      font-size: 20px;
+      color: #2a5db0;
+      cursor: pointer;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+    .content ul {
+      margin: 0;
+      padding: 0 20px;
+    }
+    .content li {
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Onboarding Checklist for Europe North Managers</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <div class="header" onclick="toggleContent('warmWelcome')">Warm Welcome</div>
+      <div id="warmWelcome" class="content">
+        <ul>
+          <li>Personally greet the new hire and review the agenda for the first day and the week.</li>
+          <li>Provide a brief office/premises tour.</li>
+          <li>Introduce the new hire to team members and their peer coach, considering integration ideas from the integration principles document.</li>
+          <li>If available, provide a welcome kit with Church Employment swag and information.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <div class="header" onclick="toggleContent('oneOnOneMeeting')">One-on-One Meeting</div>
+      <div id="oneOnOneMeeting" class="content">
+        <ul>
+          <li>Explain team’s values and objectives.</li>
+          <li>Clarify the role, responsibilities, and job description of the new hire via the onboarding plan.</li>
+          <li>Provide a copy of the 90-Day Guide for New Managers to the new hire for their review.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Add more sections as needed -->
+  </div>
+</body>
+</html>
